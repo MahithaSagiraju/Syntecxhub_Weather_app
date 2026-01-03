@@ -1,6 +1,6 @@
 // Weather App - script.js
 // Add your OpenWeatherMap API key below
-const API_KEY = '4434953bc908e1365669f049e1886ab6'; // API key inserted per user request
+const API_KEY = 'YOUR_API_KEY_HERE'; // API key inserted per user request
 
 const refs = {
   searchInput: document.getElementById('searchInput'),
@@ -154,3 +154,4 @@ function init(){
 document.addEventListener('DOMContentLoaded', init);
 
 // Comments: All API calls use async/await, errors are displayed, timestamps converted with timezone offset.
+
