@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-bg">
+      <div class="container">
+        <header class="topbar">
+          <div class="brand">Weather<span>Now</span></div>
+          <div class="search">
+            <input id="searchInput" type="text" placeholder="Search city, e.g. London" />
+            <button id="searchBtn">Search</button>
+          </div>
+        </header>
+
+        <main class="dashboard glass">
+          <section class="top-section">
+            <div class="left-card">
+              <div class="city">—</div>
+              <div class="datetime">—</div>
+              <div class="temp">—°C</div>
+              <div class="condition">
+                <img class="cond-icon" src="" alt="" />
+                <span class="cond-text">—</span>
+              </div>
+            </div>
+
+            <div class="right-cards">
+              <div class="info-card">
+                <div class="label">Feels like</div>
+                <div class="value feels">—°C</div>
+              </div>
+              <div class="info-card">
+                <div class="label">Humidity</div>
+                <div class="value humidity">—%</div>
+              </div>
+              <div class="info-card">
+                <div class="label">Wind</div>
+                <div class="value wind">— m/s</div>
+              </div>
+              <div class="info-card">
+                <div class="label">Pressure</div>
+                <div class="value pressure">— hPa</div>
+              </div>
+              <div class="info-card">
+                <div class="label">Sunrise</div>
+                <div class="value sunrise">—</div>
+              </div>
+              <div class="info-card">
+                <div class="label">Sunset</div>
+                <div class="value sunset">—</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="forecast">
+            <h3>Next 5 Days</h3>
+            <div id="forecastCards" class="forecast-cards"></div>
+          </section>
+        </main>
+
+        <div id="loading" class="overlay hidden">Loading…</div>
+        <div id="error" class="overlay error hidden"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
